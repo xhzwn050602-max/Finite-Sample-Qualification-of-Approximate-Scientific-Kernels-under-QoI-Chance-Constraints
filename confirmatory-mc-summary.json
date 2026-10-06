@@ -1,0 +1,57 @@
+{
+  "config_sha256": "a4f9c6c7adeb2419334754747a3c6dd42fa2c181729bd818854273192faaa71f",
+  "n_seed_groups": 10,
+  "n_test_observations": 2560,
+  "u_selection_counts": {
+    "mc-32-100000": 10
+  },
+  "o_star_selection_counts": {
+    "mc-32-10000": 10
+  },
+  "u_test_coverage": 1.0,
+  "o_star_test_coverage": 0.783984375,
+  "reference_test_coverage": 1.0,
+  "u_min_per_seed_cp_lower": 0.9883661238368368,
+  "o_star_min_per_seed_cp_lower": 0.693294046759027,
+  "reference_min_per_seed_cp_lower": 0.9883661238368368,
+  "mean_costs": {
+    "u_post_qualification_cost": 0.9339362442915444,
+    "o_post_qualification_cost": 0.16535879240109352,
+    "reference_post_qualification_cost": 18.935007537220372,
+    "u_matched_total_cost": 4.982166375029192,
+    "o_matched_total_cost": 4.213588923138741,
+    "reference_matched_total_cost": 22.98323766795802,
+    "u_policy_specific_total_cost": 4.982166375029192,
+    "o_policy_specific_total_cost": 2.1918514925680936
+  },
+  "u_matched_savings_vs_o_star": -0.18224077515337872,
+  "u_matched_savings_vs_o_star_ci95": {
+    "mean": -0.18224077515337872,
+    "ci95_low": -0.19793960908756963,
+    "ci95_high": -0.1665419412191878
+  },
+  "u_post_qualification_savings_vs_o_star": -4.636609886525145,
+  "u_post_qualification_savings_vs_o_star_ci95": {
+    "mean": -4.636609886525145,
+    "ci95_low": -4.739752225238818,
+    "ci95_high": -4.533467547811472
+  },
+  "u_policy_specific_savings_vs_o_star": -1.2726721832601915,
+  "u_policy_specific_savings_vs_o_star_ci95": {
+    "mean": -1.2726721832601915,
+    "ci95_low": -1.2954974577306482,
+    "ci95_high": -1.2498469087897348
+  },
+  "u_matched_savings_vs_reference": 0.7832335610855615,
+  "u_matched_savings_vs_reference_ci95": {
+    "mean": 0.7832335610855615,
+    "ci95_low": 0.7792774038727797,
+    "ci95_high": 0.7871897182983434
+  },
+  "u_post_qualification_savings_vs_reference": 0.9506831949053582,
+  "u_post_qualification_savings_vs_reference_ci95": {
+    "mean": 0.9506831949053582,
+    "ci95_low": 0.9463496170579893,
+    "ci95_high": 0.9550167727527272
+  }
+}

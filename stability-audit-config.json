@@ -1,0 +1,10 @@
+{
+  "purpose": "diagnostic numerical-stability stress audit",
+  "seeds": [101, 211, 307, 401, 503, 601, 701, 809, 907, 1009],
+  "distributions": ["light", "heavy", "correlated"],
+  "grid": 64,
+  "iterations": [1, 5, 10, 25, 50, 100, 200, 400, 800],
+  "seed_offset": 30000,
+  "reference": "64-bit sparse direct solve of the assembled variable-coefficient operator",
+  "metrics": ["finite_rate", "qoi_error", "field_error", "relative_discrete_residual"]
+}

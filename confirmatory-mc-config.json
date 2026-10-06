@@ -1,0 +1,26 @@
+{
+  "purpose": "independent tight-tolerance confirmation designed after the broad-kernel pilot",
+  "status": "locked before confirmatory execution",
+  "locked_date": "2026-09-04",
+  "interpretation": "confirmatory relative to the completed broad-kernel pilot; not a project-wide preregistration",
+  "seeds": [1201, 1303, 1409, 1511, 1601, 1709, 1801, 1901, 2003, 2111],
+  "candidates": [
+    {"name": "mc-32-10000", "precision": 32, "samples": 10000},
+    {"name": "mc-32-100000", "precision": 32, "samples": 100000},
+    {"name": "mc-32-1000000", "precision": 32, "samples": 1000000},
+    {"name": "mc-64-1000000", "precision": 64, "samples": 1000000}
+  ],
+  "reference": "mc-64-1000000",
+  "calibration": 64,
+  "validation": 64,
+  "test": 256,
+  "epsilon": 0.0025,
+  "delta": 0.10,
+  "alpha": 0.05,
+  "oblivious_mean_threshold": 0.0025,
+  "n_calls": 1000,
+  "selection_rule_u": "minimum validation-timed cost among candidates whose Bonferroni-adjusted one-sided Clopper-Pearson lower bound is at least 1-delta",
+  "selection_rule_o_star": "minimum calibration-timed cost among all candidates whose calibration mean absolute error is at most the fixed threshold",
+  "cost_views": ["post_qualification", "matched_qualification", "policy_specific"],
+  "seed_rule": "seed_group*1000000 + split_offset + trial_index, with offsets 0, 100000, and 200000"
+}

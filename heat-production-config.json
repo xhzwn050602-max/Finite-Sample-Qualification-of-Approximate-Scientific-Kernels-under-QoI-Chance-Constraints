@@ -1,0 +1,20 @@
+{
+  "purpose": "larger-grid non-manufactured heat-conduction audit",
+  "seeds": [101, 211, 307, 401, 503, 601, 701, 809, 907, 1009],
+  "distributions": ["light", "heavy", "correlated"],
+  "calibration": 16,
+  "validation": 16,
+  "test": 64,
+  "epsilon": 0.05,
+  "oblivious_mean_threshold": 0.05,
+  "delta": 0.10,
+  "alpha": 0.05,
+  "n_calls": 1000,
+  "grid": 64,
+  "boundary_condition": "left=1, right=0, bottom=0, top=0",
+  "source": 0.05,
+  "conductivity": "exp(clip(0.35*z,-2,2)) with z sampled by declared regime",
+  "reference": "64-bit sparse direct solve of the assembled variable-coefficient operator",
+  "approximation": "float16/float32/float64 Jacobi with 25,50,100,400 iterations",
+  "primary_qoi": "mean interior temperature relative error against discrete reference"
+}

@@ -1,0 +1,7 @@
+{
+  "fft_direct_dft_max_abs": 1.855634083349871e-14,
+  "spmv_csr_dense_max_abs": 8.881784197001252e-16,
+  "heat_sparse_dense_max_abs": 1.1102230246251565e-16,
+  "all_public_paths_finite": true,
+  "pass": true
+}

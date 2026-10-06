@@ -1,0 +1,4 @@
+# Prototype environment captured 2026-08-31 on the reference CPU host.
+numpy==2.4.4
+scipy==1.17.1
+matplotlib==3.10.9

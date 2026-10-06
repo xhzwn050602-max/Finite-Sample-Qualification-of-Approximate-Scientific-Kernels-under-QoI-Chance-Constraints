@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "Please cite this repository when using the accompanying research code and data."
+type: software
+title: "Finite-Sample Qualification of Approximate Scientific Kernels under QoI Chance Constraints"
+authors:
+  - family-names: Wang
+    given-names: Binglin
+  - family-names: Chen
+    given-names: Xuguang
+  - family-names: Wang
+    given-names: Shuo
+  - family-names: Xiao
+    given-names: Han
+  - family-names: Sun
+    given-names: Jianguo
+repository-code: "https://github.com/xhzwn050602-max/Finite-Sample-Qualification-of-Approximate-Scientific-Kernels-under-QoI-Chance-Constraints"
+license: MIT

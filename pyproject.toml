@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "uacientific-kernels"
+version = "0.1.0"
+description = "Prototype controller for uncertainty-aware approximate scientific kernels"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+dependencies = [
+  "numpy>=1.24",
+  "scipy>=1.10",
+]
+
+[tool.setuptools]
+py-modules = ["benchmark", "pde_case", "heat_case", "run_sweep", "run_heat_sweep", "production_heat_audit", "stability_audit", "validate_supplemental_audits", "seed_schedule_audit", "scaling_experiment", "analyze_results", "plot_results", "plot_heat_audit", "plot_production_heat_audit", "plot_stability_audit", "plot_scaling_audit", "independent_backend_check", "torch_backend_check", "validate_publication", "recompute_publication", "recompute_heat", "sensitivity_audit", "plot_sensitivity_audit", "call_count_audit", "plot_call_count_audit", "distribution_shift_audit"]
+
+[tool.pytest.ini_options]
+norecursedirs = ["tmp", "archives", "delivery", "build", "dist", ".*"]
+
+[project.optional-dependencies]
+plotting = ["matplotlib>=3.8"]
+
+[project.scripts]
+uac-benchmark = "benchmark:main"
+uac-poisson = "pde_case:main"
+uac-heat = "heat_case:main"
+uac-analyze = "analyze_results:main"
+uac-plot = "plot_results:main"
+uac-scaling = "scaling_experiment:main"
+uac-validate = "validate_publication:main"
+uac-distribution-shift-audit = "distribution_shift_audit:main"
+uac-production-heat-audit = "production_heat_audit:main"
+uac-stability-audit = "stability_audit:main"
+uac-validate-supplemental = "validate_supplemental_audits:main"
+uac-seed-schedule-audit = "seed_schedule_audit:main"

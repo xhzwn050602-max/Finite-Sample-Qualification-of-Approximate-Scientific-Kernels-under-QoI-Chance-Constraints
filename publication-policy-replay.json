@@ -1,0 +1,14 @@
+{
+  "name": "fair-oblivious-replay-v1",
+  "status": "locked replay policy for immutable publication traces",
+  "source_config": "publication-config.json",
+  "source_config_sha256": "5dcd8768e92253cbbad7169be1999293bbd0a16a5817cc2a6e387ff978d997e9",
+  "raw_trace_status": "immutable; no trace values or timings are changed",
+  "policy": "O* selects the minimum calibration-timed cost among all candidates, including the declared exact/reference candidate, whose calibration mean error is at or below the fixed case threshold",
+  "selection_inputs": ["calibration_mean_error", "calibration_timing"],
+  "selection_exclusions": ["validation_error", "test_error", "validation_timing", "test_timing"],
+  "matched_cost": "calibration overhead + validation overhead + n_calls times held-out test timing",
+  "replay_script": "recompute_publication.py",
+  "replay_command": "python recompute_publication.py --config publication-config.json --input-csv <old.csv> --traces <traces.jsonl> --output-csv <fair.csv>",
+  "note": "The source configuration retains its historical non-exact baseline description; this sidecar is the authoritative fair-policy specification used to regenerate the publication CSVs."
+}

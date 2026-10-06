@@ -1,0 +1,31 @@
+{
+  "purpose": "pre-registered starting point for a publication-grade CPU study; revise after pilot timing",
+  "seeds": [101, 211, 307, 401, 503, 601, 701, 809, 907, 1009],
+  "distributions": ["light", "heavy", "correlated"],
+  "kernel_calibration": 256,
+  "kernel_validation": 256,
+  "kernel_test": 1024,
+  "poisson_calibration": 256,
+  "poisson_validation": 256,
+  "poisson_test": 1024,
+  "kernel_epsilon": 0.05,
+  "poisson_epsilon": 0.20,
+  "oblivious_mean_threshold": 0.05,
+  "poisson_oblivious_mean_threshold": 0.20,
+  "oblivious_baseline": "cheapest non-exact configuration with calibration mean error at or below the declared threshold",
+  "delta": 0.10,
+  "alpha": 0.05,
+  "n_calls": 1000,
+  "raw_trace_format": "JSONL; one metadata record followed by one record per configuration and split trial",
+  "required_metadata": [
+    "python_version",
+    "numpy_version",
+    "scipy_version",
+    "platform",
+    "processor",
+    "cpu_count",
+    "thread_env",
+    "byteorder"
+  ],
+  "status": "executable preregistration template; execute after timing pilot and hardware lock"
+}

@@ -1,0 +1,5 @@
+# Preserve original bytes for the recorded SHA-256 checks.
+* -text
+*.gz binary
+*.pdf binary
+*.png binary
